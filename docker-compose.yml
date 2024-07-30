@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  scep:
+    image: danielmcfarland/scep
+    build:
+      context: .
+    ports:
+      - 8080:${PORT}
+    environment:
+      ALLOWRENEW: ${ALLOWRENEW}
+      DEPOT: ${DEPOT}
+      CHALLENGE: ${CHALLENGE}
+    restart: always
+    volumes:
+      - ./depot:/depot
