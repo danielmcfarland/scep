@@ -12,4 +12,4 @@ services:
       CHALLENGE: ${CHALLENGE}
     restart: always
     volumes:
-      - ./depot:/depot
+      - ../files/depot:/depot
