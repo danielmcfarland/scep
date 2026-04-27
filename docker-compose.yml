@@ -10,6 +10,7 @@ services:
       ALLOWRENEW: ${ALLOWRENEW}
       DEPOT: ${DEPOT}
       CHALLENGE: ${CHALLENGE}
+      SCEP_CA_PASS: ${SCEP_CA_PASS}
     restart: always
     volumes:
       - ../files/depot:/depot
