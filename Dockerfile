@@ -15,4 +15,4 @@ WORKDIR /depot
 
 COPY --from=builder /scepserver /usr/local/bin/
 
-ENTRYPOINT scepserver -allowrenew ${ALLOWRENEW:-0} -depot ${DEPOT:-/depot} -challenge ${CHALLENGE:-nanomdm} -debug
+ENTRYPOINT scepserver -allowrenew ${ALLOWRENEW:-0} -depot ${DEPOT:-/depot} -challenge ${CHALLENGE:-nanomdm} -capass ${PASSWORD:-secret} -debug
