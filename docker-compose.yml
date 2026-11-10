@@ -13,4 +13,4 @@ services:
       SCEP_CA_PASS: ${SCEP_CA_PASS}
     restart: always
     volumes:
-      - ../files/depot:/depot
+      - ${DEPOT:-../files/depot}:/depot
